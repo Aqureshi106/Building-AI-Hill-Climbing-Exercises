@@ -1,0 +1,12 @@
+import random
+def main():
+    prob = 0.80
+    favourite = "bats"
+    if random.random() < prob:
+        favourite = "dogs"
+    else:
+        prob = .50
+        if random.random() < prob:
+            favourite = "cats"
+    print("I love " + favourite) 
+main()
